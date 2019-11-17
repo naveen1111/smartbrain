@@ -99,7 +99,7 @@ class App extends Component {
           method:'post',
           headers:{'Content-type':'application/json'},
           body: JSON.stringify({
-            id:this.state
+            input:this.state.input
           })
         })
      .then(response => response.json())
